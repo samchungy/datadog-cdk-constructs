@@ -27,7 +27,7 @@ export enum RuntimeType {
   UNSUPPORTED,
 }
 
-export const DefaultDatadogProps = {
+export const DefaultDatadogLambdaProps = {
   addLayers: true,
   enableDatadogTracing: true,
   enableDatadogASM: false,
