@@ -8,7 +8,7 @@ from aws_cdk import (
     Stack,
 )
 from constructs import Construct
-from datadog_cdk_constructs_v2 import Datadog
+from datadog_cdk_constructs_v2 import DatadogLambda
 import os
 
 
@@ -95,7 +95,7 @@ class CdkPythonStack(Stack):
 
         )
 
-        datadog = Datadog(
+        datadog = DatadogLambda(
             self,
             "Datadog",
             dotnet_layer_version=15,

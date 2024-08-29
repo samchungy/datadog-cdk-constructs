@@ -45,10 +45,10 @@ func NewAppStack(scope constructs.Construct, id string, props *AppStackProps) aw
 	})
 
 	// Set up Datadog integration
-	datadog := ddcdkconstruct.NewDatadog(
+	datadog := ddcdkconstruct.NewDatadogLambda(
 		stack,
 		jsii.String("Datadog"),
-		&ddcdkconstruct.DatadogProps{
+		&ddcdkconstruct.DatadogLambdaProps{
 			NodeLayerVersion:      jsii.Number(113),
 			PythonLayerVersion:    jsii.Number(97),
 			JavaLayerVersion:      jsii.Number(21),
